@@ -1,0 +1,140 @@
+body{
+    height: 98vh;
+    width: auto;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("assets/bckgrnd.png");
+    background: linear-gradient(50% #969696);
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin-top: 60px;
+    margin-left: 30px;
+    color: #333333;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    color: #333333;
+}
+.top{
+    height: 100%;
+    width: auto;
+    grid-template-rows: 25% 10% 1fr;
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.portrait{
+    margin: auto;
+    width: 50%;
+    border-radius: 50%;
+    border: solid 3px #2c5fa8;
+    width: 120px;
+    height: 120px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.contactList{
+    margin: auto;
+    width: 60%;
+}
+.contact{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+p{
+    margin-left: 30px;
+    color: #333333;
+}
+.bottom{
+    height: 100%;
+    width: auto;
+    background: rgba(150,150,150,0.6);
+    grid-template-rows: 15% 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    display:grid;
+    grid-row: span 1;
+    grid-column: span 1;
+    grid-gap: 5px;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin-left: 30px;
+    padding-top: 30px;
+    color: #FFFFFF;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.amazon-clone{
+    margin: auto;
+    width: 50%;
+    background-image: url('assets/Portfolio1.jpg');
+    background-size: cover;
+    width: 250px;
+    height: 200px;
+    text-align: right;
+    font-weight: bold;
+    color: #2c5fa8;
+}
+.machine-design-2{
+    margin: auto;
+    width: 50%;
+    background-image: url('assets/Portfolio2.png');
+    background-size: cover;
+    width: 250px;
+    height: 200px;
+    text-align: right;
+    font-weight: bold;
+    color: #2c5fa8;
+}
+.watch{
+    margin: auto;
+    width: 50%;
+    background-image: url('assets/Portfolio3.jpg');
+    background-size: cover;
+    width: 250px;
+    height: 200px;
+    text-align: right;
+    font-weight: bold;
+    color: #2c5fa8;
+}
+footer{
+    border: solid 10px white;
+}
+
+@media only screen and (min-width: 600px){
+    .top{
+        height: 70%;
+    }
+    .bottom{
+        height: 50%;
+        grid-template-rows: 30% 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h3{
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+    .portrait{
+        position: relative;
+        left: 40%;
+        top: 80%;
+        border-radius: 50%;
+        border: solid 3px #2c5fa8;
+        width: 120px;
+        height: 120px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .contactList{
+        position: absolute;
+        padding-top: 30px;
+    }
+}
