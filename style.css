@@ -8,9 +8,11 @@ body {
 main {
   margin-left: 30px;
   margin-right: 30px;
-  grid-template-rows: 40% 1fr 1fr;
+  grid-template-rows: 1fr 1fr 20px;
   grid-template-columns: 1fr;
   display: grid;
+  grid-row: 1fr;
+  grid-column: 1fr;
 }
 ul {
   display: block;
@@ -36,14 +38,15 @@ h2 {
 }
 .top {
   position: relative;
-  grid-row: 1fr;
   height: 100%;
+  grid-row: 1fr;
   width: auto;
-  grid-template-rows: 15% 10% 1fr;
+  grid-template-rows: 90px 1fr;
   grid-template-columns: 1fr;
   display: grid;
   grid-row: span 1;
   grid-column: span 1;
+  padding-bottom: 30px;
 }
 .portrait {
   position: absolute;
@@ -66,8 +69,10 @@ p {
   color: #333333;
 }
 .bottom {
+  position: relative;
   grid-row: 1fr;
   width: auto;
+  padding-bottom: 20px;
   background: rgba(150, 150, 150, 0.6);
   grid-template-rows: 15% 1fr 1fr 1fr;
   grid-template-columns: 1fr;
@@ -75,7 +80,6 @@ p {
   grid-row: span 1;
   grid-column: span 1;
   grid-gap: 5px;
-  padding-bottom: 20px;
 }
 h3 {
   font-family: "Montserrat", sans-serif;
@@ -114,12 +118,12 @@ footer {
   border: solid 10px transparent;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   .top {
-    height: 70%;
+    /* height: 70%; */
   }
   .bottom {
-    height: 100%;
+    /* height: 100%; */
     grid-template-rows: 30% 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -128,18 +132,16 @@ footer {
     grid-row: span 1;
   }
   .portrait {
-    position: relative;
-    left: 40%;
-    top: 80%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
     border-radius: 50%;
     border: solid 3px #2c5fa8;
     width: 120px;
     height: 120px;
-    margin-top: 60px;
-    margin-bottom: 30px;
   }
   .contactList {
-    position: absolute;
+    position: relative;
     padding-top: 30px;
   }
 }
