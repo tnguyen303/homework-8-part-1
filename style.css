@@ -26,7 +26,7 @@ h1 {
   color: #333333;
 }
 a {
-  color: gray;
+  color: rgb(170, 165, 165);
 }
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -74,7 +74,7 @@ p {
   width: auto;
   padding-bottom: 20px;
   background: rgba(150, 150, 150, 0.6);
-  grid-template-rows: 15% 1fr 1fr 1fr;
+  grid-template-rows: 60px 1fr 1fr 1fr;
   grid-template-columns: 1fr;
   display: grid;
   grid-row: span 1;
@@ -94,7 +94,6 @@ h3 {
   grid-row: 1fr;
   grid-column: 1fr;
   margin: auto;
-  width: 50%;
   background-size: 100%;
   background-repeat: no-repeat;
   width: 200px;
@@ -119,12 +118,11 @@ footer {
 }
 
 @media only screen and (min-width: 700px) {
-  .top {
-    /* height: 70%; */
+  main {
+    grid-template-rows: 1fr 280px 20px;
   }
   .bottom {
-    /* height: 100%; */
-    grid-template-rows: 30% 1fr;
+    grid-template-rows: 50px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
   h3 {
@@ -133,7 +131,6 @@ footer {
   }
   .portrait {
     position: absolute;
-    right: 20px;
     top: 20px;
     border-radius: 50%;
     border: solid 3px #2c5fa8;
