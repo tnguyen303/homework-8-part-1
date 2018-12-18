@@ -105,11 +105,14 @@ h3 {
 .amazon-clone {
   background-image: url("assets/amazon-icon.png");
 }
-.machine-design-2 {
-  background-image: url("assets/Portfolio2.png");
+.todolist{
+  background-image: url("assets/to-do-list.png");
 }
-.watch {
-  background-image: url("assets/Portfolio3.jpg");
+.stackovercode{
+  background-image: url("assets/stackoverflow.png");
+}
+.whatsapp{
+  background-image: url("assets/whatsapp.png");
 }
 footer {
   grid-row: 1fr;
