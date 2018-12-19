@@ -94,26 +94,13 @@ h3 {
   grid-row: 1fr;
   grid-column: 1fr;
   margin: auto;
-  background-size: 100%;
-  background-repeat: no-repeat;
   width: 200px;
   height: 170px;
   text-align: right;
   font-weight: bold;
   color: #2c5fa8;
 }
-.amazon-clone {
-  background-image: url("assets/amazon-icon.png");
-}
-.todolist{
-  background-image: url("assets/to-do-list.png");
-}
-.stackovercode{
-  background-image: url("assets/stackoverflow.png");
-}
-.whatsapp{
-  background-image: url("assets/whatsapp.png");
-}
+
 footer {
   grid-row: 1fr;
   height: 20px;
@@ -125,7 +112,7 @@ footer {
     grid-template-rows: 1fr 280px 20px;
   }
   .bottom {
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 50px 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
   h3 {
@@ -143,5 +130,9 @@ footer {
   .contactList {
     position: relative;
     padding-top: 30px;
+  }
+  .projectImg{
+    width: 200px;
+    height: 150px;
   }
 }
